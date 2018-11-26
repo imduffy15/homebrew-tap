@@ -8,8 +8,4 @@ class TokenCli < Formula
   def install
     bin.install "token-cli"
   end
-
-  test do
-    token-cli version
-  end
 end
