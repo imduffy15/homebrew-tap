@@ -10,6 +10,6 @@ class TokenCli < Formula
   end
 
   test do
-    token\-cli version
+    "token-cli" version
   end
 end
