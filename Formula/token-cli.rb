@@ -3,7 +3,7 @@ class TokenCli < Formula
   homepage "https://github.com/imduffy15/token-cli"
   url "https://github.com/imduffy15/token-cli/releases/download/v0.0.1/token-cli_macOS_amd64.tar.gz"
   version "0.0.1"
-  sha256 "9bbd9f73aa8cc4bc114162fae3d16b128c33dfc438155e17279d4de1894b9cad"
+  sha256 "995fa3104b39bdc4d10e55cd4bab9a9c8c4df1c2b2bba6a7c148b849507e501f"
 
   def install
     bin.install "token-cli"
