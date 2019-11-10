@@ -2,9 +2,18 @@
 class TokenCli < Formula
   desc "OpenID token generator"
   homepage "https://github.com/imduffy15/token-cli"
-  url "https://github.com/imduffy15/token-cli/releases/download/v0.0.6/token-cli_macOS_amd64.tar.gz"
-  version "0.0.6"
-  sha256 "7a016399aeb4df2a2eec3694bb7d3236a8d392237e59b01e4af795092e821eb3"
+  version "0.0.7"
+  bottle :unneeded
+
+  if OS.mac?
+    url "https://github.com/imduffy15/token-cli/releases/download/v0.0.7/token-cli_macOS_amd64.tar.gz"
+    sha256 "81e5411c6f3080d89f5a289a3a57f3f5ba48290f9258b10290aa1e96ffab0702"
+  elsif OS.linux?
+    if Hardware::CPU.intel?
+      url "https://github.com/imduffy15/token-cli/releases/download/v0.0.7/token-cli_linux_amd64.tar.gz"
+      sha256 "443677fdf2bb6094e752626c6b3b1902453eb51feef8d4ad0a6eb924768cf37a"
+    end
+  end
 
   def install
     bin.install "token-cli"
