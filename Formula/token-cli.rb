@@ -3,7 +3,6 @@ class TokenCli < Formula
   desc "OpenID token generator"
   homepage "https://github.com/imduffy15/token-cli"
   version "1.0.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/imduffy15/token-cli/releases/download/v1.0.0/token-cli_macOS_amd64.tar.gz"
